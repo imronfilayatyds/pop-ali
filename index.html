@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop It</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <!-- Navbar -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    <a href="#" class="header__logo-title">popit.ali</a>
+                </div>
+                <div class="header__burger" id="header__burger">
+                    <span class="header__burger-first"></span>
+                    <span class="header__burger-second"></span>
+                    <span class="header__burger-third"></span>
+                </div>
+                <div id="header__menu" class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="#about" class="header__link">About</a></li>
+                        <li class="header__menu-item"><a href="#variants" class="header__link">Variants</a></li>
+                        <li class="header__menu-item"><a href="#" class="header__link">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero section -->
+        <section class="hero">
+          <div class="hero__container">
+            <div class="hero__text">
+              <h1 class="hero__title">POP IT!</h1>
+              <p class="hero__subtitle">The best anti-stress toy - endless bubble wrap!</p>
+              <button class="hero__button">Buy</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="about">
+            <div class="about__container">
+                <h2 class="about__title">What is Pop It?</h2>
+                <p class="about__text">
+                    Pop It literally translates as "pop it". It's a children's game, the process of which can be compared to crumpling bubble wrap. But unlike bubble wrap, Pop It can be pressed with characteristic sensations and sounds "infinitely": dozens of silicone bubbles are simply squeezed to the other side.
+                </p>
+            </div>
+        </section>
+
+        <!-- Variants section -->
+         <section id="variants" class="variants">
+            <div class="variants__container">
+                <h2 class="variants__title">Choose your Pop It!</h2>
+                <div class="variants__items">
+                    <div class="variants__item">
+                      <img src="img/square.png" alt="Colorful square" class="variants__img">
+                      <p class="variants__description">Colorful square</p>
+                      <button class="variants__button">Buy</button>
+                    </div>
+                    <div class="variants__item">
+                      <img src="img/amongus.png" alt="Among Us, marble" class="variants__img">
+                      <p class="variants__description">Among Us, marble</p>
+                      <button class="variants__button">Buy</button>
+                    </div>
+                    <div class="variants__item">
+                      <img src="img/round.png" alt="Colorful round" class="variants__img">
+                      <p class="variants__description">Colorful round</p>
+                      <button class="variants__button">Buy</button>
+                    </div>
+                  </div>
+            </div>
+         </section>
+
+         <!-- Game rulis section -->
+         <section class="rules">
+            <div class="rules__container">
+                <h2 class="rules__title">Game rules</h2>
+                <p class="rules__description">
+                    Players take turns pressing the bubbles. You must always finish the row you started. You can press a maximum of 3 bubbles at a time (they must be next to each other, you can't press several bubbles at once if they are not adjacent! The goal is to make the opponent move last. Whoever moves last loses.
+                </p>
+                <img src="img/photo.jpg" alt="game rules" class="rules__img">
+            </div>
+          </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__title"><a href="#" class="footer__title-link">popit.ali</a></h2>
+            <div class="footer__menu">
+                <li class="footer__item"><a href="#" class="footer__link">Payment methods</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Delivery</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Wholesale</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Contacts</a></li>
+            </div>
+        </div>
+    </footer>
+      
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
