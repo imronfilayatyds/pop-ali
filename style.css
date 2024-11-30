@@ -19,7 +19,7 @@
 
 .header__fixed {
     position: fixed;
-    background-color: rgba(245, 245, 220);
+    background-color: #FFBF69;
     box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -110,8 +110,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: rgba(245, 245, 220);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #FFBF69;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
     max-width: 160px;
     /* width: 152px; */
     position: absolute;
@@ -152,27 +152,29 @@
 
 /* ------- HERO ------- */
 .hero {
-  background-image: url(img/background.png);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  /* height: calc(100vw * 0.625); */
-  height: 450px;
-  max-height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 40px 20px; */
+    /* height: calc(100vw * 0.625); */
+    background-color: #FFBF69;
+    height: 450px;
+    /* max-height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px 20px; */
 }
 
 .hero__container {
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -280,13 +282,15 @@
 
 /* ------- GAME RULES ------- */
 .rules {
+    background-color: white;
+    padding: 20px;
+}
+
+.rules__container {
     background-image: url(img/bg-grid.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.rules__container {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
@@ -340,7 +344,7 @@
 }
 
 .footer__title-link:hover {
-    color: #CBF3F0;
+    color: #FFBF69;
 }
 
 .footer__menu {
@@ -376,6 +380,10 @@
 /* RESPONSIVE FOR TABLETS */
 @media (min-width: 481px) {
     /* HEADER DAN NAVBAR  */
+    .header__container {
+        max-height: 80%;
+    }
+
     .header__logo {
         flex: 1;
         padding: 8px 20px;
@@ -413,16 +421,14 @@
 
     /* HERO */
     .hero {
-        /* align-items: center; */
-        /* height: 450px; */
-        /* max-height: calc(100vw * 0.625);s */
-        /* max-height: 50vw; */
-        height: 550px;
-        max-height: 650px;
+        height: 450px;
     }
 
     .hero__container {
-        justify-content: flex-end;
+        max-width: 80%;
+        height: 80%;
+        background-size: contain;
+        justify-content: center;
     }
 
     .hero__title {
@@ -512,13 +518,12 @@
 
     /* HERO */
     .hero {
-        background-position: center;
-        height: calc(100vw * 0.625);
-        max-height: 750px;
+        height: 500px
     }
-
+    
     .hero__container {
         align-items: flex-start; 
+        margin: 0;
         padding: 0 40px; 
     }
     
@@ -641,22 +646,20 @@
 
     /* HERO */
     .hero {
-        /* background-size: contain; */
-        /* background-repeat: no-repeat; */
-        /* background-position: center; */
         width: 100%;
-        justify-content: flex-start;
-        height: calc(100vw * 0.625);
-        /* max-height: 100vh; */
+        /* justify-content: stretch; */
+        height: 600px;
     }
 
     .hero__container {
+        width: 100%;
+        background-position: right center;
         margin: 0;
     }
 
     .hero__text {
         gap: 25px;
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
 
     .hero__title {
@@ -716,9 +719,7 @@
 /* FOR TV AND EXTRA LARGE SCREEN */
 @media (min-width: 1201px) {
     .hero {
-        background-position: 50% 30%;
-        height: calc(100vh);
-        /* max-height: calc(100vw * 0.625); */
+        height: 750px;
     }
 
     .hero__title {
